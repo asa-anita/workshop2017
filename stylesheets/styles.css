@@ -1,0 +1,32 @@
+/*
+ * site-header
+ */
+
+.jumbotron.site-header {
+    background-color: #2a2730;
+    margin-bottom: 0;
+    color: #b5e853;
+}
+
+.container .jumbotron {
+    background-color: #2a2730;
+    min-height: 300px;
+}
+
+.container .jumbotron h1 {
+    font-size: 3em;
+    color: #eaffea;
+    padding-bottom: 10px;
+    border-bottom: #eaffea dashed 0.01em;
+}
+
+.container .jumbotron .content {
+    color: #fff;
+}
+
+
+.navrow {
+    background-color: #00acac;
+    margin-bottom: 20px;
+    height: 40px;
+}

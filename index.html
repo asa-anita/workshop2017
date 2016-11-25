@@ -1,53 +1,89 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <script src="javascripts/w3data.js"></script>
 
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">-->
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" media="screen">
     <title>ANITA 2017 workshop and astroinformatics school</title>
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <div class="container">
-        <h1>ANITA workshop and school 2017</h1>
-        <h2>6th-10th Feb, University of Tasmania, Hobart, Tasmania</h2>
+<div w3-include-html="snippets/header.html"></div>
+<div class="container-fluid navrow">
+    <div class="container" w3-include-html="snippets/nav.html"></div>
+</div>
 
-      </div>
-    </header>
 
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="anita-2017-workshop-and-astroinformatics-school" class="anchor" href="#anita-2017-workshop-and-astroinformatics-school" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ANITA 2017 workshop and astroinformatics school.</h3>
-
-<p>The ANITA annual workshop aims to provide a review of theoretical astrophysics in Australia, facilitate collaboration and build the community of theoretical astrophysicists.</p>
-
-<p>The workshop is open to everyone, membership to ANITA is not required (though encouraged).</p>
-
-<h3>
-<a id="anita-workshop-2017" class="anchor" href="#anita-workshop-2017" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ANITA Workshop 2017</h3>
-
-<p>The 2017 ANITA workshop will be held 9th-10th February at the University of Tasmania in Hobart, Tasmania</p>
-
-<h3>
-<a id="astroinformatics-school" class="anchor" href="#astroinformatics-school" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Astroinformatics school</h3>
-
-<p>The 2017 astroinformatics school will run 6th-8th February at the same location</p>
-
-<h3>
-<a id="organising-committee" class="anchor" href="#organising-committee" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Organising committee</h3>
-
-<p>LOC: Stas Shabala, Daniel Price
-SOC: ANITA steering committee</p>
-      </section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1>ANITA 2017 workshop and astroinformatics school.</h1>
+                <div class="content">
+                    <p>The ANITA annual workshop aims to provide a review of theoretical astrophysics in Australia,
+                        facilitate
+                        collaboration and build the community of theoretical astrophysicists.</p>
+                    <p>The workshop is open to everyone, membership to ANITA is not required (though encouraged).</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <h1>ANITA Workshop 2017</h1>
+                <div class="content">
+                    <p>The 2017 ANITA workshop will be held 9th-10th February at the University of Tasmania in Hobart,
+                        Tasmania</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <h1>Astroinformatics school</h1>
+                <div class="content">
+                    <p>The 2017 astroinformatics school will run 6th-8th February at the same location</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    
-  </body>
+
+<div class="container">
+    <section id="main_content">
+        <h3>
+            <a id="organising-committee" class="anchor" href="#organising-committee" aria-hidden="true"><span
+                    aria-hidden="true" class="octicon octicon-link"></span></a>Organising committee</h3>
+
+        <p>LOC: Stas Shabala, Daniel Price
+            SOC: ANITA steering committee</p>
+    </section>
+</div>
+
+<script>
+    w3IncludeHTML();
+</script>
+
+</body>
 </html>
