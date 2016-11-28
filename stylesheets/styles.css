@@ -1,3 +1,7 @@
+body {
+    background-color: #f8f8f8;
+}
+
 /*
  * site-header
  */
@@ -8,13 +12,31 @@
     color: #b5e853;
 }
 
+/*
+ * navigation
+ */
+
+.navrow {
+    background-color: #666666;
+    height: 40px;
+}
+
+/*
+ * body
+ */
+
+.container.main {
+    padding: 30px;
+    background-color: #fff;
+}
+
 .container .jumbotron {
-    background-color: #2a2730;
+    background-color: #3b5998;
     min-height: 300px;
 }
 
 .container .jumbotron h1 {
-    font-size: 3em;
+    font-size: 2.9em;
     color: #eaffea;
     padding-bottom: 10px;
     border-bottom: #eaffea dashed 0.01em;
@@ -25,8 +47,3 @@
 }
 
 
-.navrow {
-    background-color: #00acac;
-    margin-bottom: 20px;
-    height: 40px;
-}
