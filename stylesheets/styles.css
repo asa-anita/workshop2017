@@ -1,5 +1,12 @@
 body {
     background-color: #f8f8f8;
+    font-family: Raleway;
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 10px;
+    }
 }
 
 /*
@@ -7,18 +14,72 @@ body {
  */
 
 .jumbotron.site-header {
-    background-color: #2a2730;
+    background-color: #439ec9;
     margin-bottom: 0;
-    color: #b5e853;
+    color: #fff;
+}
+
+.jumbotron.site-header h1{
+    color: floralwhite;
+    font-size: 5em;
+}
+
+
+.jumbotron.site-header h2{
+    font-size: 1.8em;
 }
 
 /*
  * navigation
  */
 
-.navrow {
-    background-color: #666666;
-    height: 40px;
+.navbar {
+    min-height: 0;
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.navbar-collapse {
+    text-align: center;
+    background-color: #2a2730;
+}
+
+.navbar-header {
+    background-color: #2a2730;
+}
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-nav>li>a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:visited,
+.navbar-default .navbar-nav>li>a:active {
+    color: #f8f8f8;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #2a2730;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #2a2730;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 /*
@@ -31,19 +92,78 @@ body {
 }
 
 .container .jumbotron {
-    background-color: #3b5998;
+    background-color: #C7B097;
     min-height: 300px;
 }
 
+@media screen and (max-width: 991px) {
+    .container .jumbotron {
+        min-height: 0;
+    }
+}
+
 .container .jumbotron h1 {
-    font-size: 2.9em;
+    font-size: 2.5em;
     color: #eaffea;
     padding-bottom: 10px;
     border-bottom: #eaffea dashed 0.01em;
 }
 
-.container .jumbotron .content {
-    color: #fff;
+.container .jumbotron .content p{
+    color: #2a2730;
+    font-size: 1.5em;
 }
 
+/*
+ * body content
+ */
 
+.body-content {
+    padding: 20px 0;
+}
+
+.body-content .header {
+    border-bottom: 1px #bd2c00 solid;
+    margin-bottom: 20px;
+    font-variant: small-caps;
+    color: #439ec9;
+}
+
+.body-content .header span {
+    font-size: 2em;
+}
+
+.body-content .sub-header {
+    margin-top: 10px;
+}
+
+.body-content .sub-header span {
+    font-size: 1.5em;
+}
+
+.body-content ul li {
+    font-size: 1.1em;
+}
+
+/*
+ * footer
+ */
+
+.footer {
+    background-color: #fff;
+}
+
+.footer .footer-bar {
+    padding: 10px;
+    background-color: #2a2730;
+    text-align: center;
+    color: #eaffea;
+}
+
+.footer .logo-bar {
+    padding: 20px;
+}
+
+.footer .logo {
+    text-align: center;
+}
