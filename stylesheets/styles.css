@@ -1,11 +1,18 @@
 body {
     background-color: #f8f8f8;
-    font-family: Raleway;
+    font-family: Raleway, Serif;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 991px) {
     body {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        font-size: 12px;
     }
 }
 
@@ -19,14 +26,23 @@ body {
     color: #fff;
 }
 
-.jumbotron.site-header h1{
+.jumbotron.site-header h1 {
     color: floralwhite;
     font-size: 5em;
 }
 
-
-.jumbotron.site-header h2{
+.jumbotron.site-header h2 {
     font-size: 1.8em;
+}
+
+@media screen and (max-width: 991px) {
+    .jumbotron.site-header h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron.site-header h2 {
+        font-size: 1.5em;
+    }
 }
 
 /*
@@ -55,20 +71,20 @@ body {
     float: none;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.navbar-default .navbar-nav>li>a,
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:visited,
-.navbar-default .navbar-nav>li>a:active {
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:visited,
+.navbar-default .navbar-nav > li > a:active {
     color: #f8f8f8;
     text-transform: uppercase;
     font-size: 1.2em;
+    letter-spacing: 1px;
 }
-
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #2a2730;
@@ -80,6 +96,32 @@ body {
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        padding: 0;
+    }
+
+    .navbar-default .navbar-nav {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-default .navbar-nav > li {
+        border-bottom: 1px darkgrey solid;
+    }
+
+    .navbar-default .navbar-nav > li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:visited,
+    .navbar-default .navbar-nav > li > a:active {
+        font-size: 1.1em;
+    }
 }
 
 /*
@@ -109,9 +151,26 @@ body {
     border-bottom: #eaffea dashed 0.01em;
 }
 
-.container .jumbotron .content p{
+.container .jumbotron .content p {
     color: #2a2730;
     font-size: 1.5em;
+}
+
+@media screen and (max-width: 991px) {
+    .container .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .container .jumbotron .content p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 
 /*
@@ -127,6 +186,8 @@ body {
     margin-bottom: 20px;
     font-variant: small-caps;
     color: #439ec9;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .body-content .header span {
@@ -138,11 +199,23 @@ body {
 }
 
 .body-content .sub-header span {
+    color: darkred;
     font-size: 1.5em;
+    font-weight: 700;
 }
 
 .body-content ul li {
-    font-size: 1.1em;
+    font-size: 1.3em;
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .iframe-container iframe {
+        width: 100%;
+    }
 }
 
 /*
